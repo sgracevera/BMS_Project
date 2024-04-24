@@ -382,7 +382,7 @@ public class billing extends javax.swing.JFrame implements Runnable {
         com.itextpdf.text.Document doc= new com.itextpdf.text.Document();
         try
         {
-            PdfWriter.getInstance(doc,new FileOutputStream(path+""+name+""+jLabel4.getText()+".pdf"));
+            PdfWriter.getInstance(doc, new FileOutputStream(path + name + jLabel4.getText() + ".pdf"));
             doc.open();
             Paragraph paragraph1=new Paragraph("                                          GNS(Billing Managament System)\n                                            Contact No: (+91)6006975268\n\n");
             doc.add(paragraph1);
